@@ -2756,6 +2756,7 @@ button.apihu-port-primary-btn:hover {
   width: 100%;
   bottom: 0;
   left: 0;
+  right: 0;
   padding: 35px 20px 30px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
