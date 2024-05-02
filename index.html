@@ -20,9 +20,32 @@
 		<style type="text/css">
 			@font-face { font-family: Roboto; src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf"); }
 		</style>
+
+		<style>
+			.alert {
+				display: none;
+				position: fixed;
+				bottom: 0;
+				width: 100%;
+				font-size: 25px;
+				background-color: black;
+				color: white; 
+				padding: 10px;
+				text-align: left;
+				z-index: 1000;
+				border-radius: 15px;
+				font-weight: 600;
+				font-family: 'Poppins', sans-serif;
+			}
+		</style>
 	</head>
 
 	<body class="apihu-port-body" data-new-gr-c-s-check-loaded="14.1062.0" data-gr-ext-installed="">
+		<!-- Alert bar -->
+		<div id="alert" class="alert">
+			<p><i class="fas fa-exclamation-circle" style="color: #e90606;"></i>  This Feature Is In Progress.</p>
+		</div>
+
 		<div class="apihu-port-body-overlay"></div>
 
 		<!-- Preloader-->
@@ -59,6 +82,7 @@
 							<ul>
 								<li><a href="#">Home</a></li>
 								<li><a href="#apihu-port-resume">About</a></li>
+								<li><a href="#apihu-port-services">Services</a></li>
 								<li><a href="#apihu-port-feature">Projects</a></li>
 								<li><a href="#apihu-port-pricing-area">Qualifications</a></li>
 								<li><a href="#contact-details">Contact</a></li>
@@ -87,6 +111,7 @@
 			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="#apihu-port-resume">About</a></li>
+				<li><a href="#apihu-port-services">Services</a></li>
 				<li><a href="#apihu-port-feature">Projects</a></li>
 				<li><a href="#apihu-port-pricing-area">Qualifications</a></li>
 				<li><a href="#contact-details">Contact</a></li>
@@ -150,8 +175,6 @@
 		<section class="apihu-port-about-area" id="apihu-port-resume">
 			<!-- Animated bubble -->
 			<img src="static/image/about-shape-1.png" alt="" class="apihu-port-about-shape">
-			
-			
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-6 col-lg-6">
@@ -254,7 +277,7 @@
 		<!-- About End -->
 
 		<!-- Service Start -->
-		<section class="apihu-port-service-area" id="apihu-port-feature">
+		<section class="apihu-port-service-area" id="apihu-port-services">
 			<img class="apihu-port-service-shape-1" src="static/image/service-shape-1.png" alt="Service Shape">
 			<img class="apihu-port-service-shape-2" src="static/image/service-shape-2.png" alt="Service Shape">
 
@@ -276,7 +299,7 @@
 							</div>
 							<h3 class="apihu-port-single-service-title">App Development</h3>
 							<p class="apihu-port-single-service-text" style="text-align: justify;">Crafting innovative mobile solutions tailored to your needs, ensuring seamless user experiences and robust performance.</p>
-							<a class="apihu-port-single-service-btn" href="">Read More <i class="fas fa-plus"></i></a>
+							<a class="apihu-port-single-service-btn showAlertBtn" href="">Read More <i class="fas fa-plus"></i></a>
 						</div>
 					</div>
 					<div class="col-xl-3 col-lg-3 col-md-6">
@@ -286,7 +309,7 @@
 							</div>
 							<h3 class="apihu-port-single-service-title">Web Development</h3>
 							<p class="apihu-port-single-service-text" style="text-align: justify;">Building dynamic and responsive websites that captivate audiences, elevate brands, and drive online success.</p>
-							<a class="apihu-port-single-service-btn" href="">Read More <i class="fas fa-plus"></i></a>
+							<a class="apihu-port-single-service-btn showAlertBtn" href="">Read More <i class="fas fa-plus"></i></a>
 						</div>
 					</div>
 					<div class="col-xl-3 col-lg-3 col-md-6">
@@ -296,7 +319,7 @@
 							</div>
 							<h3 class="apihu-port-single-service-title">Python Development</h3>
 							<p class="apihu-port-single-service-text" style="text-align: justify;">Harness the power of Python to develop scalable, efficient, and maintainable software solutions, empowering your business with versatile capabilities.</p>
-							<a class="apihu-port-single-service-btn" href="">Read More <i class="fas fa-plus"></i></a>
+							<a class="apihu-port-single-service-btn showAlertBtn" href="">Read More <i class="fas fa-plus"></i></a>
 						</div>
 					</div>
 					<div class="col-xl-3 col-lg-3 col-md-6">
@@ -306,13 +329,13 @@
 							</div>
 							<h3 class="apihu-port-single-service-title">Machine Learning</h3>
 							<p class="apihu-port-single-service-text" style="text-align: justify;">Utilize advanced algorithms and data-driven insights to drive informed decisions, unlocking the potential for automation and predictive analytics.</p>
-							<a class="apihu-port-single-service-btn" href="">Read More <i class="fas fa-plus"></i></a>
+							<a class="apihu-port-single-service-btn showAlertBtn" href="">Read More <i class="fas fa-plus"></i></a>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-xl-12 text-center">
-						<div class="apihu-port-service-load-more-btn">
+						<div class="apihu-port-service-load-more-btn showAlertBtn">
 							<a href="">Load More <i class="fas fa-plus"></i></a>
 						</div>
 					</div>
@@ -371,7 +394,7 @@
 									<span>App Development</span>
 									<h3>Alpha (Ongoing)</h3>
 									<p style="text-align: justify;">Creating a social media application using Flutter for all type of devices. Technologies Used: Flutter, Dart, GitHub, Jira, Figma, Firebase, Provider State Management, etc.</p>
-									<a href="">Explore More <i class="fas fa-plus"></i></a>
+									<a href="" class="showAlertBtn">Explore More <i class="fas fa-plus"></i></a>
 								</div>
 								<div class="col-xl-6 col-lg-6">
 									<div class="apihu-port-portfolio-img">
@@ -509,7 +532,7 @@
 									<span>Machine Learning</span>
 									<h3>Home Price Prediction</h3>
 									<p style="text-align: justify;">Predict home prices accurately with machine learning. Leverage linear regression to forecast property values with precision. Used <b>Linear Regression Algorithum</b> for train the machine learning model.</p>
-									<a href="" target="_blank">Explore More <i class="fas fa-plus"></i></a>
+									<a href="" target="_blank" class="showAlertBtn">Explore More <i class="fas fa-plus"></i></a>
 								</div>
 								<div class="col-xl-6 col-lg-6">
 									<div class="apihu-port-portfolio-img">
@@ -627,7 +650,7 @@
 										<textarea placeholder="Message"></textarea>
 									</div>
 									<div class="col-xl-12">
-										<button type="submit">Submit Now</button>
+										<button type="submit" class="showAlertBtn">Submit Now</button>
 									</div>
 								</div>
 							</form>
@@ -639,12 +662,8 @@
 								<img src="static/image/contact_us.jpg" alt="Contact Right">
 							</div>
 							<div class="apihu-port-contact-right-content">
-								<div class="apihu-port-contact-icon-box">
-									<img style="padding: 15px;" src="static/image/chat_icons.png" alt="">
-								</div>
-								<div class="apihu-port-contact-text">
-									<span class="apihu-port-contact-number">+91 8600916352</span>
-									<span class="apihu-port-contact-email"><a href="mailto:abhishekraut2355@gmail.com">abhishekraut2355@gmail.com</a></span>
+								<div>
+									<p class="apihu-port-contact-text" style="font-weight: 600; font-family: 'Poppins', sans-serif;">Have a question, a project idea, or just want to say hello? We'd love to hear from you! Fill out the form below, and we'll get back to you as soon as possible.</p>
 								</div>
 							</div>
 						</div>
@@ -655,54 +674,54 @@
 		<!-- Contact End -->
 
 		<!-- Footer Start -->
-		<!-- Site footer -->
 		<footer class="site-footer">
-		<div class="container">
-			<div class="row">
-			<div class="col-sm-12 col-md-6">
-				<img src="static/image/Abhishek Raut.png" alt="footer logo">
-				<p class="text-justify">Thank you for visiting my personal portfolio site. I would really be glad to connect with you. Message me on my LinkedIn handle or on my Instagram handle.</p><p>Keep learning and keep rising.</p>
-			</div>
+			<div class="container">
+				<div class="row">
+				<div class="col-sm-12 col-md-6">
+					<img src="static/image/Abhishek Raut.png" alt="footer logo">
+					<p class="text-justify">Thank you for visiting my personal portfolio site. I would really be glad to connect with you. Message me on my LinkedIn handle or on my Instagram handle.</p><p>Keep learning and keep rising.</p>
+				</div>
 
-			<div class="col-xs-6 col-md-3">
-				<h6>Contact Info</h6>
-				<ul class="footer-links">
-				<li><i class="fa-solid fa-phone" style="color: yellow;"></i>  (+91) 8600916352</li>
-				<li><i class="fa-solid fa-envelope" style="color: yellow;"></i>  abhishekraut2355@gmail.com</li>
-				<li><i class="fa-solid fa-location-pin" style="color: yellow;"></i>  Karjat, Ahmednagar</li>
-				</ul>
-			</div>
+				<div class="col-xs-6 col-md-3">
+					<h6>Contact Info</h6>
+					<ul class="footer-links">
+					<li><i class="fa-solid fa-phone" style="color: yellow;"></i>  (+91) 8600916352</li>
+					<li><i class="fa-solid fa-envelope" style="color: yellow;"></i>  abhishekraut2355@gmail.com</li>
+					<li><i class="fa-solid fa-location-pin" style="color: yellow;"></i>  Karjat, Ahmednagar</li>
+					</ul>
+				</div>
 
-			<div class="col-xs-6 col-md-3">
-				<h6>Quick Links</h6>
-				<ul class="footer-links" >
-					<li><a href="#">Home</a></li>
-					<li><a href="#apihu-port-resume">About</a></li>
-					<li><a href="#apihu-port-feature">Projects</a></li>
-					<li><a href="#apihu-port-pricing-area">Qualifications</a></li>
-					<li><a href="#contact-details">Contact</a></li>
-				</ul>
+				<div class="col-xs-6 col-md-3">
+					<h6>Quick Links</h6>
+					<ul class="footer-links" >
+						<li><a href="#">Home</a></li>
+						<li><a href="#apihu-port-resume">About</a></li>
+						<li><a href="#apihu-port-services">Services</a></li>
+						<li><a href="#apihu-port-feature">Projects</a></li>
+						<li><a href="#apihu-port-pricing-area">Qualifications</a></li>
+						<li><a href="#contact-details">Contact</a></li>
+					</ul>
+				</div>
+				</div>
+				<hr>
 			</div>
-			</div>
-			<hr>
-		</div>
-		<div class="container">
-			<div class="row">
-			<div class="col-md-8 col-sm-6 col-xs-12">
-				<p class="copyright-text">Designed with <i class="fa fa-heart pulse" style="color: #e90606;"></i> by
-			<a href="https://www.linkedin.com/in/rautabhishek/" style="color: whitesmoke;"><b>Abhishek Raut</b></a>.
-				</p>
-			</div>
+			<div class="container">
+				<div class="row">
+				<div class="col-md-8 col-sm-6 col-xs-12">
+					<p class="copyright-text">Designed with <i class="fa fa-heart pulse" style="color: #e90606;"></i> by
+				<a href="https://www.linkedin.com/in/rautabhishek/" style="color: whitesmoke;"><b>Abhishek Raut</b></a>.
+					</p>
+				</div>
 
-			<div class="col-md-4 col-sm-6 col-xs-12">
-				<ul class="social-icons">
-				<li><a class="github" href="https://github.com/abhishek2355"><i class="fa fa-github"></i></a></li>
-				<li><a class="instagram" href="https://www.instagram.com/abhishekraut2710/?hl=en"><i class="fa fa-instagram"></i></a></li>
-				<li><a class="linkedin" href="https://www.linkedin.com/in/rautabhishek/"><i class="fa fa-linkedin"></i></a></li>   
-				</ul>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<ul class="social-icons">
+					<li><a class="github" href="https://github.com/abhishek2355"><i class="fa fa-github"></i></a></li>
+					<li><a class="instagram" href="https://www.instagram.com/abhishekraut2710/?hl=en"><i class="fa fa-instagram"></i></a></li>
+					<li><a class="linkedin" href="https://www.linkedin.com/in/rautabhishek/"><i class="fa fa-linkedin"></i></a></li>   
+					</ul>
+				</div>
+				</div>
 			</div>
-			</div>
-		</div>
 		</footer>
 		<!-- Footer End -->
 
@@ -720,19 +739,40 @@
 		<script src="./assets/scripts-31.js.download"></script>
 
 		<script src="./assets/type.js"></script>
+
+		<script>
+			// Get all buttons
+			const buttons = document.querySelectorAll('.showAlertBtn');
+		
+			// Get the alert bar
+			const alertBar = document.getElementById('alert');
+		
+			// Add event listener to each button
+			buttons.forEach(function(button) {
+			  button.addEventListener('click', function() {
+				event.preventDefault();
+				alertBar.style.display = 'block';
+				setTimeout(function() {
+				  alertBar.style.display = 'none';
+				}, 2000);
+			  });
+			});
+		  </script>
+
+
 		<div id="imageDownloaderSidebarContainer">
 			<div class="image-downloader-ext-container">
 				<div tabindex="-1" class="b-sidebar-outer">
 					<div id="image-downloader-sidebar" tabindex="-1" role="dialog" aria-modal="false" aria-hidden="true" class="b-sidebar shadow b-sidebar-right bg-light text-dark" style="width: 500px; display: none;">
 						<div class="b-sidebar-body">
 							<div>
-
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		
 	</body>
 	<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 </html>
