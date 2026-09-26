@@ -1,778 +1,328 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Abhishek Raut - Portfolio Website</title>	
-		<!-- Mobile Specific Meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!--Css Fils -->
-		<link rel="stylesheet" href="static/css/animate.css">
-		<link rel="stylesheet" href="static/css/flaticon-31.css">	
-		<link rel="stylesheet" href="static/css/owl.carousel.css">
-		<link rel="stylesheet" href="static/css/typer.css">
-		<link rel="stylesheet" href="static/css/slick-theme.css">
-		<link rel="stylesheet" href="static/css/slick.css">
-		<link rel="stylesheet" href="static/css/bootstrap.min.css">
-		<link rel="stylesheet" href="static/css/style-31.css">
-		<!-- Javascript -->
-		<script src="https://kit.fontawesome.com/d59710d54e.js" crossorigin="anonymous"></script>
-		<!-- Style -->
-		<style type="text/css">
-			@font-face { font-family: Roboto; src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf"); }
-		</style>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Abhishek Raut is a software engineer and iOS developer at Raja Software Labs, experienced in mobile development, backend systems, and building user-focused products.">
+    <meta name="theme-color" content="#f7f8f5">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Abhishek Raut | iOS Developer">
+    <meta property="og:description" content="Software engineer and iOS developer working across mobile apps, backend development, and user-focused product experiences.">
+    <meta property="og:image" content="assets/og-image.svg">
+    <title>Abhishek Raut | iOS Developer &amp; Freelance Partner</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="static/css/portfolio.css">
+    <script src="assets/portfolio.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="#home" aria-label="Abhishek Raut, home">
+          <span class="brand-mark" aria-hidden="true">AR</span>
+          <span class="brand-name">Abhishek Raut<span class="brand-period">.</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation">
+          <span></span><span></span>
+        </button>
+        <nav class="primary-navigation" id="primary-navigation" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#projects">Projects</a>
+          <a href="#services">Services</a>
+          <a class="nav-contact" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
 
-		<style>
-			.alert {
-				display: none;
-				position: fixed;
-				bottom: 0;
-				width: 100%;
-				font-size: 25px;
-				background-color: black;
-				color: white; 
-				padding: 10px;
-				text-align: left;
-				z-index: 1000;
-				border-radius: 15px;
-				font-weight: 600;
-				font-family: 'Poppins', sans-serif;
-			}
-		</style>
-	</head>
+    <main id="main">
+      <section class="hero section-pad" id="home" aria-labelledby="hero-title">
+        <div class="hero-grid shell">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Software engineer <span class="eyebrow-divider">/</span> iOS developer</p>
+            <h1 id="hero-title">Building mobile products <span>people love to use.</span></h1>
+            <p class="hero-lede">I'm <strong>Abhishek Raut</strong>, a software engineer at Raja Software Labs with 2.5+ years of professional experience. My background spans iOS and cross-platform mobile development, backend engineering, and system design.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">View my work <span aria-hidden="true">↘</span></a>
+              <a class="button button-quiet" href="#contact">Hire me <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="hero-meta">
+              <span>Based in <strong>Karjat, Maharashtra, India</strong></span>
+              <span class="meta-separator" aria-hidden="true"></span>
+              <span>Available for freelance inquiries</span>
+            </div>
+          </div>
+          <div class="hero-art" aria-label="Illustration of a mobile app interface" role="img">
+            <div class="art-orbit orbit-one"></div>
+            <div class="art-orbit orbit-two"></div>
+            <div class="art-label label-top"><span class="label-icon" aria-hidden="true">✳</span> Product-minded engineering</div>
+            <div class="phone">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="screen-top"><span>9:41</span><span aria-hidden="true">● ● ●</span></div>
+                <div class="screen-greeting">Good morning,<br><strong>there.</strong></div>
+                <div class="screen-card screen-feature">
+                  <span class="screen-kicker">TODAY'S FOCUS</span>
+                  <span class="screen-feature-title">Make space<br>for good ideas.</span>
+                  <span class="screen-arrow" aria-hidden="true">↗</span>
+                </div>
+                <div class="screen-row"><span class="screen-row-icon">✦</span><span><b>Your next step</b><small>One thing at a time</small></span><span class="screen-chevron">›</span></div>
+                <div class="screen-tabs"><i></i><i></i><i></i><i></i></div>
+              </div>
+            </div>
+            <div class="art-label label-bottom"><span class="sparkle" aria-hidden="true">✳</span> Swift <span class="label-slash">/</span> SwiftUI <span class="label-slash">/</span> Craft</div>
+            <span class="art-spark art-spark-one" aria-hidden="true">✳</span>
+            <span class="art-spark art-spark-two" aria-hidden="true">✳</span>
+          </div>
+        </div>
+        <div class="shell hero-bottom">
+          <span>Thoughtful details. Solid foundations.</span>
+          <a href="#about">Scroll to explore <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
 
-	<body class="apihu-port-body" data-new-gr-c-s-check-loaded="14.1062.0" data-gr-ext-installed="">
-		<!-- Alert bar -->
-		<div id="alert" class="alert">
-			<p><i class="fas fa-exclamation-circle" style="color: #e90606;"></i>  This Feature Is In Progress.</p>
-		</div>
+      <section class="section-pad about-section" id="about" aria-labelledby="about-title">
+        <div class="shell about-grid">
+          <div class="section-intro reveal">
+            <p class="eyebrow">A little about me</p>
+            <h2 class="section-title" id="about-title">Great apps feel simple.<br><span>Making them isn't.</span></h2>
+          </div>
+          <div class="about-copy reveal">
+            <p class="lead-copy">I build efficient, user-focused software across mobile, backend, and product experiences.</p>
+            <p>I'm a software engineer at Raja Software Labs with a foundation in Information Technology Engineering. My work and projects have taken me through iOS and Flutter development, backend services, and system design. I value clean, modular architecture, structured problem-solving, and continuous improvement.</p>
+            <p class="about-background-note">I've collaborated with cross-functional teams, contributed to production-ready applications, and continued learning through professional, internship, academic, and personal projects.</p>
+            <a class="text-link" href="#contact">A bit more about working together <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
 
-		<div class="apihu-port-body-overlay"></div>
+      <section class="section-pad experience-section" id="experience" aria-labelledby="experience-title">
+        <div class="shell">
+          <div class="section-heading-row reveal">
+            <div>
+              <p class="eyebrow">The journey so far</p>
+              <h2 class="section-title" id="experience-title">Experience &amp; <span>growth.</span></h2>
+            </div>
+            <p class="heading-aside">Professional engineering, software development,<br>and early internship experience.</p>
+          </div>
+          <article class="experience-card reveal">
+            <div class="experience-marker" aria-hidden="true"><span></span></div>
+            <div class="experience-main">
+              <div class="experience-topline"><span class="experience-label">CURRENT ROLE</span><span class="experience-dates">June 2024 — Present</span></div>
+              <h3>Software Engineer</h3>
+              <p class="experience-company">Raja Software Labs</p>
+              <p class="experience-note">Experience includes developing and maintaining production-ready applications, with a focus on clean architecture, modular design, performance, and user experience. Current project details are not included to respect confidentiality.</p>
+              <div class="tag-list" aria-label="Professional focus"><span>iOS</span><span>Mobile development</span><span>Backend &amp; system design</span></div>
+            </div>
+            <div class="experience-side"><span class="experience-since">Pune</span><span>Maharashtra, India</span></div>
+          </article>
+          <article class="experience-card reveal">
+            <div class="experience-marker" aria-hidden="true"><span></span></div>
+            <div class="experience-main">
+              <div class="experience-topline"><span class="experience-label">PROFESSIONAL EXPERIENCE</span><span class="experience-dates">January 2024 — May 2024</span></div>
+              <h3>SiliconMount Tech Services</h3>
+              <p class="experience-company">Pune, Maharashtra</p>
+              <p class="experience-note">Professional experience with SiliconMount Tech Services in Pune, Maharashtra.</p>
+            </div>
+            <div class="experience-side"><span class="experience-since">2024</span><span>5 months</span></div>
+          </article>
+          <article class="experience-card reveal">
+            <div class="experience-marker" aria-hidden="true"><span></span></div>
+            <div class="experience-main">
+              <div class="experience-topline"><span class="experience-label">INTERNSHIP</span><span class="experience-dates">September 2023 — March 2024</span></div>
+              <h3>Software Development Intern</h3>
+              <p class="experience-company">ERK LABS</p>
+              <p class="experience-note">Contributed to cross-platform Flutter applications, helped debug and optimize app performance, and collaborated with designers and backend developers.</p>
+              <div class="tag-list" aria-label="Internship focus"><span>Flutter</span><span>App performance</span><span>Cross-functional collaboration</span></div>
+            </div>
+            <div class="experience-side"><span class="experience-since">2023–24</span><span>West Bengal, India</span></div>
+          </article>
+          <article class="experience-card reveal">
+            <div class="experience-marker" aria-hidden="true"><span></span></div>
+            <div class="experience-main">
+              <div class="experience-topline"><span class="experience-label">CAMPUS AMBASSADOR INTERNSHIP</span><span class="experience-dates">June 2021 — July 2021</span></div>
+              <h3>Campus Ambassador</h3>
+              <p class="experience-company">puro. — Natural Handmade Body Care · Shramik Naari Sangh</p>
+              <p class="experience-note">An early internship experience with Shramik Naari Sangh in Parli, Maharashtra.</p>
+            </div>
+            <div class="experience-side"><span class="experience-since">2021</span><span>Parli, Maharashtra</span></div>
+          </article>
+          <p class="section-footnote">Role dates and descriptions are based on the LinkedIn profile PDF you provided.</p>
+        </div>
+      </section>
 
-		<!-- Preloader-->
-		<div class="loading-preloader" style="display: none;">
-			<div id="loading-preloader">
-				<div class="line_shape"></div>
-				<div class="line_shape"></div>
-				<div class="line_shape"></div>
-				<div class="line_shape"></div>
-				<div class="line_shape"></div>
-				<div class="line_shape"></div>
-				<div class="line_shape"></div>
-				<div class="line_shape"></div>
-				<div class="line_shape"></div>
-				<div class="line_shape"></div>
-			</div>
-		</div>
-		<!-- Preloader End -->
+      <section class="section-pad skills-section" id="skills" aria-labelledby="skills-title">
+        <div class="shell skills-layout">
+          <div class="skills-intro reveal">
+            <p class="eyebrow">Tools of the trade</p>
+            <h2 class="section-title" id="skills-title">A toolkit for<br><span>shipping well.</span></h2>
+            <p>Skills listed in your profile span mobile, backend, web, databases, and general software engineering.</p>
+          </div>
+          <div class="skill-groups reveal">
+            <div class="skill-group"><div class="skill-heading"><span class="skill-index">01</span><h3>Mobile development</h3></div><div class="skill-pills"><span>iOS</span><span>Flutter</span><span>Dart</span><span>Swift</span></div></div>
+            <div class="skill-group"><div class="skill-heading"><span class="skill-index">02</span><h3>Programming &amp; backend</h3></div><div class="skill-pills"><span>Python</span><span>Flask</span><span>C</span><span>C++</span><span>SQL</span><span>REST APIs</span></div></div>
+            <div class="skill-group"><div class="skill-heading"><span class="skill-index">03</span><h3>Web development</h3></div><div class="skill-pills"><span>HTML</span><span>CSS</span><span>Bootstrap</span><span>JavaScript</span><span>Web applications</span></div></div>
+            <div class="skill-group"><div class="skill-heading"><span class="skill-index">04</span><h3>Databases &amp; tools</h3></div><div class="skill-pills"><span>MySQL</span><span>MongoDB</span><span>Firebase</span><span>Git/GitHub</span><span>OOP</span><span>LaTeX</span></div></div>
+          </div>
+        </div>
+      </section>
 
-		<!-- ScrollTop Button -->
-        <a href="#" class="apihu-port-scroll-top" style="display: none;"><i class="fas fa-chevron-up"></i></a>
+      <section class="section-pad education-section" id="education" aria-labelledby="education-title">
+        <div class="shell">
+          <div class="section-heading-row reveal">
+            <div>
+              <p class="eyebrow">Education &amp; recognition</p>
+              <h2 class="section-title" id="education-title">A foundation in <span>learning.</span></h2>
+            </div>
+            <p class="heading-aside">Information Technology Engineering<br>and academic highlights.</p>
+          </div>
+          <div class="education-grid">
+            <div class="education-list reveal">
+              <article class="education-card">
+                <span class="education-period">2020 — 2024</span>
+                <div><h3>B.Tech, Information Technology</h3><p>Rayat Shikshan Sanstha's Dada Patil Mahavidyalaya</p><span>Karjat, Ahmednagar</span></div>
+              </article>
+              <article class="education-card">
+                <span class="education-period">2018 — 2020</span>
+                <div><h3>11th &amp; Higher Secondary Certificate</h3><p>Nutan Madhyamik Vidyalaya, Loni-Masadpur</p></div>
+              </article>
+              <article class="education-card">
+                <span class="education-period">2017 — 2018</span>
+                <div><h3>Secondary School Certificate</h3><p>Nutan Madhyamik Vidyalaya, Loni-Masadpur</p></div>
+              </article>
+            </div>
+            <aside class="recognition-card reveal" aria-label="Achievements and languages">
+              <p class="eyebrow">Highlights</p>
+              <article class="recognition-item"><span class="recognition-symbol" aria-hidden="true">✳</span><div><h3>Gold Medalist — 1st Rank</h3><p>Avishkar Zonal Round, 2024</p></div></article>
+              <article class="recognition-item"><span class="recognition-symbol" aria-hidden="true">↗</span><div><h3>Advanced study program</h3><p>Completed an 18-hour program at DBATU</p></div></article>
+              <div class="language-list"><span>Languages</span><p>English · Hindi · Marathi</p></div>
+            </aside>
+          </div>
+        </div>
+      </section>
 
-		<!-- Header Start -->
-		<header class="apihu-port-header-area">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-2 col-lg-2 col-md-2 col-3">
-						<div class="apihu-port-logo">
-							<img src="./assets/ar_logo.png" alt="SaaSio Portfolio">
-						</div>
-					</div>
-					<div class="col-xl-8 d-none d-lg-block text-center col-lg-8">
-						<div class="apihu-port-main-navigation">
-							<ul>
-								<li><a href="#">Home</a></li>
-								<li><a href="#apihu-port-resume">About</a></li>
-								<li><a href="#apihu-port-services">Services</a></li>
-								<li><a href="#apihu-port-feature">Projects</a></li>
-								<li><a href="#apihu-port-pricing-area">Qualifications</a></li>
-								<li><a href="#contact-details">Contact</a></li>
-								
-							</ul>
-						</div>
-					</div>
-					<div class="col-xl-2 col-lg-2 col-md-10 col-9 text-right">
-						<div class="apihu-port-header-cta">
-							<a href="https://wa.me/918600916352?text=Hello%20there!" target="_blank">Let's Chat <i class="fas fa-comment-dots"></i></a>
-						</div>
+      <section class="section-pad projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="shell">
+          <div class="section-heading-row reveal">
+            <div>
+              <p class="eyebrow">Selected work</p>
+              <h2 class="section-title" id="projects-title">A few things I've <span>built.</span></h2>
+            </div>
+            <p class="heading-aside">Personal projects from my earlier<br>portfolio and learning journey.</p>
+          </div>
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <div class="project-visual visual-green">
+                <img class="project-image" src="static/image/projects/quick_talk.jpg" alt="Quick Talk application screens" width="900" height="1125" loading="lazy" decoding="async">
+                <span class="visual-sticker">PERSONAL PROJECT</span>
+              </div>
+              <div class="project-content"><div class="project-meta"><span>Mobile app</span><span>Flutter · Dart</span></div><h3>Quick Talk</h3><p>A cross-platform chat application built with Flutter, focused on a straightforward and user-friendly messaging experience.</p><a class="text-link" href="https://github.com/abhishek2355/Quick-Talk" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-visual visual-cool">
+                <img class="project-image" src="static/image/projects/Avishkar.jpg" alt="AvishkarTrack mobile application screens" width="900" height="1125" loading="lazy" decoding="async">
+                <span class="visual-sticker">PERSONAL PROJECT</span>
+              </div>
+              <div class="project-content"><div class="project-meta"><span>Mobile app</span><span>Flutter · Dart</span></div><h3>AvishkarTrack</h3><p>A student project app for submitting and verifying projects and supporting the judging and scoring process.</p><a class="text-link" href="https://github.com/abhishek2355/Avishkar_project" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-visual visual-warm">
+                <img class="project-image" src="static/image/projects/BMI.jpg" alt="BMI Tracker app screens" width="900" height="1125" loading="lazy" decoding="async">
+                <span class="visual-sticker">PERSONAL PROJECT</span>
+              </div>
+              <div class="project-content"><div class="project-meta"><span>Mobile app</span><span>Flutter · Dart</span></div><h3>BMI Tracker</h3><p>A personal body metrics assistant to help users calculate and keep track of their BMI.</p><a class="text-link" href="https://github.com/abhishek2355/BMI" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-visual visual-green">
+                <img class="project-image" src="static/image/projects/calculator.jpg" alt="Flutter calculator app screen" width="900" height="1125" loading="lazy" decoding="async">
+                <span class="visual-sticker">PERSONAL PROJECT</span>
+              </div>
+              <div class="project-content"><div class="project-meta"><span>Mobile app</span><span>Flutter · Dart</span></div><h3>Calculator</h3><p>A simple calculator application built with Flutter for quick calculations across supported devices.</p><a class="text-link" href="https://github.com/abhishek2355/calculator_flutter_App" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-visual visual-cool">
+                <img class="project-image" src="static/image/projects/login.jpg" alt="AuthFlow sign-in screen" width="900" height="1125" loading="lazy" decoding="async">
+                <span class="visual-sticker">PERSONAL PROJECT</span>
+              </div>
+              <div class="project-content"><div class="project-meta"><span>Web app</span><span>Flutter</span></div><h3>AuthFlow</h3><p>A Flutter web app for user authentication, with sign-in, sign-up, and password-reset flows.</p><a class="text-link" href="https://github.com/abhishek2355/AuthifyWeb" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-visual visual-warm">
+                <img class="project-image" src="static/image/projects/random_pass.jpg" alt="Random Password Generator application screen" width="900" height="1125" loading="lazy" decoding="async">
+                <span class="visual-sticker">PERSONAL PROJECT</span>
+              </div>
+              <div class="project-content"><div class="project-meta"><span>Desktop tool</span><span>Python</span></div><h3>Random Password Generator</h3><p>A Python desktop utility for generating passwords with configurable options.</p><a class="text-link" href="https://github.com/abhishek2355/Random_Password_Generator" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">↗</span></a></div>
+            </article>
+          </div>
+          <p class="project-disclaimer">These projects are from my earlier portfolio; the linked repositories contain further details.</p>
+        </div>
+      </section>
 
-						<div class="apihu-port-mobile-menu-hamburger">
-							<a href="#"><i class="fas fa-bars"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-		<!-- Header End -->
+      <section class="section-pad services-section" id="services" aria-labelledby="services-title">
+        <div class="shell">
+          <div class="services-header reveal">
+            <div><p class="eyebrow">Freelance services</p><h2 class="section-title" id="services-title">Good work starts<br><span>with a good fit.</span></h2></div>
+            <p>Need help with an iOS app or a focused mobile feature? I’m open to discussing freelance projects, scope, and availability.</p>
+          </div>
+          <div class="service-grid">
+            <article class="service-card reveal"><span class="service-number">01</span><span class="service-icon" aria-hidden="true">↗</span><h3>iOS app development</h3><p>Native iOS features and app experiences, shaped around your product goals and users.</p><span class="service-note">Scope to be agreed together</span></article>
+            <article class="service-card reveal"><span class="service-number">02</span><span class="service-icon" aria-hidden="true">⌘</span><h3>Feature delivery</h3><p>Focused support to plan, build, test, and polish a well-defined feature in your app.</p><span class="service-note">Short engagements welcome</span></article>
+            <article class="service-card reveal"><span class="service-number">03</span><span class="service-icon" aria-hidden="true">✳</span><h3>App improvements</h3><p>Thoughtful refinements to usability, accessibility, reliability, and app experience.</p><span class="service-note">Start with a discovery call</span></article>
+          </div>
+          <div class="work-process reveal" id="how-i-work">
+            <div class="process-intro"><p class="eyebrow">How I work</p><h3>Clear steps.<br>Good collaboration.</h3></div>
+            <ol class="process-list">
+              <li><span>01</span><div><h4>Listen &amp; align</h4><p>Understand the goal, the people it serves, and what success looks like.</p></div></li>
+              <li><span>02</span><div><h4>Plan the path</h4><p>Agree on scope, priorities, milestones, and the best way to work together.</p></div></li>
+              <li><span>03</span><div><h4>Build &amp; share</h4><p>Deliver in clear increments, communicate openly, and invite useful feedback.</p></div></li>
+              <li><span>04</span><div><h4>Polish &amp; hand over</h4><p>Test the details, prepare a clean handoff, and leave room for what's next.</p></div></li>
+            </ol>
+          </div>
+        </div>
+      </section>
 
-		<!-- Mobile Menu -->
-		<div class="apihu-port-mobile-menu">
-			<a href="#" class="apihu-port-menu-close"><i class="fas fa-times"></i></a>
-			<a href="#" class="apihu-port-logo-wrapper"><img src="./assets/white-logo.png" alt=""></a>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#apihu-port-resume">About</a></li>
-				<li><a href="#apihu-port-services">Services</a></li>
-				<li><a href="#apihu-port-feature">Projects</a></li>
-				<li><a href="#apihu-port-pricing-area">Qualifications</a></li>
-				<li><a href="#contact-details">Contact</a></li>
-			</ul>
-		</div>
-		<!-- Mobile Menu End -->
+      <section class="contact-section section-pad" id="contact" aria-labelledby="contact-title">
+        <div class="shell contact-grid">
+          <div class="contact-copy reveal">
+            <p class="eyebrow">Have something in mind?</p>
+            <h2 id="contact-title">Let's make<br><span>it happen.</span></h2>
+            <p>Tell me about your project, your team, or an opportunity. You can also reach me directly by email or WhatsApp.</p>
+            <a class="contact-email" href="mailto:abhishekraut2355@gmail.com">abhishekraut2355@gmail.com <span aria-hidden="true">↗</span></a>
+            <div class="contact-links">
+              <a href="https://wa.me/918600916352" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+              <a href="https://www.linkedin.com/in/rautabhishek/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://github.com/abhishek2355" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://www.instagram.com/abhishekraut2710/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+          </div>
+          <form class="contact-form reveal" id="contact-form" action="mailto:abhishekraut2355@gmail.com" method="post" enctype="text/plain">
+            <div class="form-row">
+              <label for="contact-name">Your name</label>
+              <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Jane Smith" required>
+            </div>
+            <div class="form-row">
+              <label for="contact-email">Email address</label>
+              <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="jane@company.com" required>
+            </div>
+            <div class="form-row">
+              <label for="contact-message">A little about your project</label>
+              <textarea id="contact-message" name="message" rows="4" placeholder="What are you hoping to build?" required></textarea>
+            </div>
+            <button class="button button-primary form-submit" type="submit">Start a conversation <span aria-hidden="true">↗</span></button>
+            <p class="form-note">No backend is connected. Submitting opens a draft in your default mail app.</p>
+          </form>
+        </div>
+      </section>
+    </main>
 
-		<!-- Hero Start -->		
-		<section class="apihu-port-hero-area" id="apihu-port-hero">
-
-			<!-- Hero bg shape -->
-			<img class="apihu-port-hero-shape-1" src="static/image/flutter.png" alt="Shape">
-			<img class="apihu-port-hero-shape-2" src="static/image/python.png" alt="Shape">
-			<img class="apihu-port-hero-shape-3" src="static/image/html.png" alt="Shape">
-			<img class="apihu-port-hero-shape-4" src="static/image/sql.png" alt="Shape">
-			
-			<span class="apihu-port-hero-side-style-text">Abhishek Raut</span>
-
-			<div class="container">
-				<div class="row">
-					<!-- Text of heading page -->
-					<div class="col-xl-8 col-lg-8">
-						<div class="apihu-port-hero-left">
-							<p class="apihu-port-hero-subtitle wow slideInDown" style="visibility: visible; animation-name: slideInDown;">Welcome to My World</p>
-							<h1 class="apihu-port-hero-title cd-headline clip is-full-width">Hi there!<br>I’m Abhishek Raut<span class="apihu-port-hero-title-color cd-words-wrapper" style="width: 67.5582px; overflow: hidden;"></span>
-								<span class="apihu-port-hero-title-small-text">
-									<div class="type">
-										<p>I'm into <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
-									</div>
-								</span> 
-							</h1>
-							<ul class="apihu-port-hero-btn-wrap wow slideInUp" style="visibility: visible; animation-name: slideInUp;">
-								<li><a class="apihu-port-primary-btn apihu-port-hero-btn-gradient" href="mailto:abhishekraut2355@gmail.com">Hire Me +</a></li>
-								<li><a class="apihu-port-secondary-btn apihu-port-hero-btn-white" href="https://drive.google.com/file/d/1uqWXP3Rr-QVeXSHzjDRNPMVJlFeUDX_l/view?usp=sharing" target="_blank">Download CV <i class="fas fa-download"></i></a></li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="col-xl-4 col-lg-4">
-						<!-- hero area social -->
-						<div class="apihu-port-hero-social">
-							<ul>
-								<li><a href="https://www.linkedin.com/in/rautabhishek/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-								<li><a href="https://github.com/abhishek2355" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-								<li><a href="https://www.instagram.com/abhishekraut2710/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-							</ul>
-						</div>
-						<!-- hero profile image -->
-						<div class="apihu-port-hero-right wow slideInRight" style="visibility: visible; animation-name: slideInRight;">
-							<div class="apihu-port-hero-right-img">
-								<img src="static/image/abhishek.png" alt="Hero Area">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Hero End -->
-
-		<!-- About Start -->
-		<section class="apihu-port-about-area" id="apihu-port-resume">
-			<!-- Animated bubble -->
-			<img src="static/image/about-shape-1.png" alt="" class="apihu-port-about-shape">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-6 col-lg-6">
-						<div class="apihu-port-about-left wow slideInLeft" style="visibility: visible; animation-name: slideInLeft;">
-							<div class="apihu-port-about-img">
-								<img src="static/image/left_python.png" alt="">
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-6 col-lg-6">
-						<div class="apihu-port-about-right">
-							<h3 class="apihu-port-about-subtitle">About Abhishek</h3>
-							<h2 class="apihu-port-about-title">passionate about new technologies<h2>
-							<p class="apihu-port-about-text">I am final year student of <b>Information Technology Engineering</b> at <b>Dr. Babasaheb Ambedkar Technological University Lonere Raigad.</b> I am passionately delving into the realms of software development and mobile technologies. I am driven by a relentless curiosity to explore and innovate in the dynamic world of technology.</p>
-							<div class="apihu-port-about-expertise">
-								<!-- Buttons -->
-								<ul class="nav nav-pills" id="pills-tab" role="tablist">
-									<li class="nav-item">
-										<a class="nav-link active show" id="pills-home-tab" data-toggle="pill" role="tab" aria-controls="pills-home" aria-selected="true" href="#pills-home">Main Skill</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" id="pills-home-tab" data-toggle="pill" role="tab" aria-controls="pills-profile" aria-selected="false" href="#pills-profile">Awards</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" id="pills-home-tab" data-toggle="pill" role="tab" aria-controls="pills-contact" aria-selected="false" href="#pills-contact">Codefolio</a>
-									</li>
-								</ul>
-
-								<div class="tab-content" id="pills-tabContent">
-									<!-- Skill Button Press -->
-									<div class="tab-pane fade active show" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-										<ul>
-											<li>
-												<span class="apihu-port-expertise-title">User Centric - Flutter App Development</span>
-												<span class="apihu-port-expertise-text">Crafting intuitive Flutter apps with a user-first approach.</span>
-											</li>
-											<li>
-												<span class="apihu-port-expertise-title">Web & User Interface Design - Development</span>
-												<span class="apihu-port-expertise-text">Designing and developing captivating web interfaces for seamless user experiences.</span>
-											</li>
-											<li>
-												<span class="apihu-port-expertise-title">Integrated Digital Solutions - Full Stack Development</span>
-												<span class="apihu-port-expertise-text">Seamless Integration, Comprehensive Solutions.</span>
-											</li>	
-											<li>
-												<span class="apihu-port-expertise-title">Python Development</span>
-												<span class="apihu-port-expertise-text">Crafting efficient solutions with Python's versatility and power.</span>
-											</li>										
-										</ul>
-									</div>
-
-									<!-- Awards Button press -->
-									<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-home-tab">
-										<ul>
-											<li>
-												<span class="apihu-port-expertise-title">Mobile App Development Awards (Gold Medal) 2023</span>
-												<span class="apihu-port-expertise-text">Flutter Application Awards.</span>
-											</li>
-											<li>
-												<span class="apihu-port-expertise-title">Web Development Award 2021</span>
-												<span class="apihu-port-expertise-text">Designed Website with HTMl, CSS, Javascript</span>
-											</li>
-										</ul>
-									</div>
-
-									<!-- Codefolio Button press -->
-									<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-home-tab">
-										<ul>
-											<li>
-												<span class="apihu-port-expertise-title">Programming Languages</span>
-												<span class="apihu-port-expertise-text" >C, C++, Python, Dart</span>
-											</li>
-											<a href="https://leetcode.com/u/abhishek_raut2355/" target="_blank">
-												<li>
-													<span class="apihu-port-expertise-title">Coding Profile - LeetCode</span>
-													<span class="apihu-port-expertise-text">Solved 300+ LeetCode questions.</span>
-												</li>
-											</a>
-											<a href="https://www.codechef.com/users/abhisahekraut" target="_blank">
-												<li>
-													<span class="apihu-port-expertise-title">Coding Profile - CodeChef</span>
-													<span class="apihu-port-expertise-text">Solved 500+ CodeChef questions. Highest rating: 1597.</span>
-												</li>
-											</a>
-											<a href="https://www.hackerrank.com/profile/abhishekraut2355" target="_blank">
-												<li>
-													<span class="apihu-port-expertise-title">Coding Profile - HackerRank</span>
-													<span class="apihu-port-expertise-text">5 stars in C, C++, Python, etc.</span>
-												</li>
-											</a>
-										</ul>
-									</div>
-								</div>
-							</div>							
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- About End -->
-
-		<!-- Service Start -->
-		<section class="apihu-port-service-area" id="apihu-port-services">
-			<img class="apihu-port-service-shape-1" src="static/image/service-shape-1.png" alt="Service Shape">
-			<img class="apihu-port-service-shape-2" src="static/image/service-shape-2.png" alt="Service Shape">
-
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-12 text-center">
-						<div class="apihu-port-section-heading">
-							<p class="apihu-port-section-subtitle">What We Do</p>
-							<h2 class="apihu-port-section-title">We are Optimists who Love to <br>work <span class="apihu-port-section-title-color">Together</span>.</h2>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-xl-3 col-lg-3 col-md-6">
-						<div class="apihu-port-single-service wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-							<div class="apihu-port-service-icon-box">
-								<i class="fas fa-cogs"></i>
-							</div>
-							<h3 class="apihu-port-single-service-title">App Development</h3>
-							<p class="apihu-port-single-service-text" style="text-align: justify;">Crafting innovative mobile solutions tailored to your needs, ensuring seamless user experiences and robust performance.</p>
-							<a class="apihu-port-single-service-btn showAlertBtn" href="">Read More <i class="fas fa-plus"></i></a>
-						</div>
-					</div>
-					<div class="col-xl-3 col-lg-3 col-md-6">
-						<div class="apihu-port-single-service wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-							<div class="apihu-port-service-icon-box">
-								<i class="fas fa-cogs"></i>
-							</div>
-							<h3 class="apihu-port-single-service-title">Web Development</h3>
-							<p class="apihu-port-single-service-text" style="text-align: justify;">Building dynamic and responsive websites that captivate audiences, elevate brands, and drive online success.</p>
-							<a class="apihu-port-single-service-btn showAlertBtn" href="">Read More <i class="fas fa-plus"></i></a>
-						</div>
-					</div>
-					<div class="col-xl-3 col-lg-3 col-md-6">
-						<div class="apihu-port-single-service wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
-							<div class="apihu-port-service-icon-box">
-								<i class="fas fa-cogs"></i>
-							</div>
-							<h3 class="apihu-port-single-service-title">Python Development</h3>
-							<p class="apihu-port-single-service-text" style="text-align: justify;">Harness the power of Python to develop scalable, efficient, and maintainable software solutions, empowering your business with versatile capabilities.</p>
-							<a class="apihu-port-single-service-btn showAlertBtn" href="">Read More <i class="fas fa-plus"></i></a>
-						</div>
-					</div>
-					<div class="col-xl-3 col-lg-3 col-md-6">
-						<div class="apihu-port-single-service wow fadeInUp" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
-							<div class="apihu-port-service-icon-box">
-								<i class="fas fa-cogs"></i>
-							</div>
-							<h3 class="apihu-port-single-service-title">Machine Learning</h3>
-							<p class="apihu-port-single-service-text" style="text-align: justify;">Utilize advanced algorithms and data-driven insights to drive informed decisions, unlocking the potential for automation and predictive analytics.</p>
-							<a class="apihu-port-single-service-btn showAlertBtn" href="">Read More <i class="fas fa-plus"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xl-12 text-center">
-						<div class="apihu-port-service-load-more-btn showAlertBtn">
-							<a href="">Load More <i class="fas fa-plus"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Service End -->
-
-		<!-- CTA Start -->
-		<section class="apihu-port-cta-area">
-			<img class="apihu-port-cta-shape" src="./assets/cta-bg.png" alt="Cta shape">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-12">
-						<div class="apihu-port-cta-content-wrap">
-							<img class="apihu-port-cta-container-shape" src="./assets/cta-bg-shape.png" alt="Cta container shape">
-							<div class="row">
-								<div class="col-xl-8 col-lg-8">
-									<div class="apihu-port-cta-content-text">
-										<p>Get It Touch</p>
-										<h2>Have a Project on Your Mind</h2>
-										<a href="#contact-details">Contact Me +</a>
-									</div>
-								</div>
-								<div class="col-xl-4 col-lg-4">
-									<div class="apihu-port-cta-content-img">
-										<img src="./assets/cta-right.png" alt="Call to action area">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- CTA End -->
-
-		<!-- Project Section Start -->
-		<section class="apihu-port-portfolio-area" id="apihu-port-feature">
-			<img class="apihu-port-portfolio-shape" src="static/image/portfolio-shape.png" alt="">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-12 text-center">
-						<div class="apihu-port-section-heading">
-							<p class="apihu-port-section-subtitle">Trying to make this section powerful and inspiring.</p>
-							<h2 class="apihu-port-section-title">Projects and <span class="apihu-port-section-title-color">Achievements</span>.</h2>
-						</div>
-					</div>
-				</div>
-
-				<div class="row apihu-port-portfolio-grid" style="position: relative; height: 2890.21px;">
-					<div class="col-xl-6 col-lg-6 col-md-6 apihu-port-portfolio-item uiux" style="position: absolute; left: 0%; top: 0px;">
-						<div class="apihu-port-single-portfolio">
-							<div class="row">
-								<div class="col-xl-6 col-lg-6">
-									<span>App Development</span>
-									<h3>Alpha (Ongoing)</h3>
-									<p style="text-align: justify;">Creating a social media application using Flutter for all type of devices. Technologies Used: Flutter, Dart, GitHub, Jira, Figma, Firebase, Provider State Management, etc.</p>
-									<a href="" class="showAlertBtn">Explore More <i class="fas fa-plus"></i></a>
-								</div>
-								<div class="col-xl-6 col-lg-6">
-									<div class="apihu-port-portfolio-img">
-										<img src="static/image/alpha.jpg" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-xl-6 col-lg-6 col-md-6 apihu-port-portfolio-item uiux" style="position: absolute; left: 0%; top: 0px;">
-						<div class="apihu-port-single-portfolio">
-							<div class="row">
-								<div class="col-xl-6 col-lg-6">
-									<span>App Development</span>
-									<h3>Quick Talk</h3>
-									<p style="text-align: justify;">Created the chatting application using <b>Flutter</b> for all type of devices. I've developed a robust and user-friendly chatting application that will revolutionize your communication experience.</p>
-									<a href="https://github.com/abhishek2355/Quick-Talk" target="_blank">Explore More <i class="fas fa-plus"></i></a>
-								</div>
-								<div class="col-xl-6 col-lg-6">
-									<div class="apihu-port-portfolio-img">
-										<img src="static/image/quick_talk.jpg" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<br>
-
-				<div class="row apihu-port-portfolio-grid" style="position: relative; height: 2890.21px;">
-					<div class="col-xl-6 col-lg-6 col-md-6 apihu-port-portfolio-item uiux" style="position: absolute; left: 0%; top: 0px;">
-						<div class="apihu-port-single-portfolio">
-							<div class="row">
-								<div class="col-xl-6 col-lg-6">
-									<span>App Development</span>
-									<h3>AvishkarTrack App</h3>
-									<p style="text-align: justify;">Created a user-friendly mobile app for DBATU students, simplifying project submission and verification, enabling judging and scoring of student's projects for the Avishkar team.</p>
-									<a href="https://github.com/abhishek2355/Avishkar_project" target="_blank">Explore More <i class="fas fa-plus"></i></a>
-								</div>
-								<div class="col-xl-6 col-lg-6">
-									<div class="apihu-port-portfolio-img">
-										<img src="static/image/Avishkar.png" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-xl-6 col-lg-6 col-md-6 apihu-port-portfolio-item uiux" style="position: absolute; left: 0%; top: 0px;">
-						<div class="apihu-port-single-portfolio">
-							<div class="row">
-								<div class="col-xl-6 col-lg-6">
-									<span>App Development</span>
-									<h3>BMI Tracker App </h3>
-									<p style="text-align: justify;">Created personal body metrics assistant. Track and manage your BMI effortlessly with this intuitive Flutter app.</p>
-									<a href="https://github.com/abhishek2355/BMI" target="_blank">Explore More <i class="fas fa-plus"></i></a>
-								</div>
-								<div class="col-xl-6 col-lg-6">
-									<div class="apihu-port-portfolio-img">
-										<img src="static/image/BMI.png" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<br>
-
-				<div class="row apihu-port-portfolio-grid" style="position: relative; height: 2890.21px;">
-					<div class="col-xl-6 col-lg-6 col-md-6 apihu-port-portfolio-item uiux" style="position: absolute; left: 0%; top: 0px;">
-						<div class="apihu-port-single-portfolio">
-							<div class="row">
-								<div class="col-xl-6 col-lg-6">
-									<span>App Development</span>
-									<h3>Calculator App</h3>
-									<p style="text-align: justify;">Created <b>Calculator App</b> for all type of devices using flutter. Can perform quick calculations with ease using this sleek Flutter app</p>
-									<a href="https://github.com/abhishek2355/calculator_flutter_App" target="_blank">Explore More <i class="fas fa-plus"></i></a>
-								</div>
-								<div class="col-xl-6 col-lg-6">
-									<div class="apihu-port-portfolio-img">
-										<img src="static/image/calculator.png" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-xl-6 col-lg-6 col-md-6 apihu-port-portfolio-item uiux" style="position: absolute; left: 0%; top: 0px;">
-						<div class="apihu-port-single-portfolio">
-							<div class="row">
-								<div class="col-xl-6 col-lg-6">
-									<span>App Development</span>
-									<h3>AuthFlow App </h3>
-									<p style="text-align: justify;">Seamlessly manage user authentication with this versatile <b>Flutter Web app</b>. Effortlessly implement login, signup, and password reset features for a smooth user experience</p>
-									<a href="https://github.com/abhishek2355/AuthifyWeb" target="_blank">Explore More <i class="fas fa-plus"></i></a>
-								</div>
-								<div class="col-xl-6 col-lg-6">
-									<div class="apihu-port-portfolio-img">
-										<img src="static/image/login.png" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<br>
-
-				<div class="row apihu-port-portfolio-grid" style="position: relative; height: 2890.21px;">
-					<div class="col-xl-6 col-lg-6 col-md-6 apihu-port-portfolio-item uiux" style="position: absolute; left: 0%; top: 0px;">
-						<div class="apihu-port-single-portfolio">
-							<div class="row">
-								<div class="col-xl-6 col-lg-6">
-									<span>Python Development</span>
-									<h3>Random Password Generator </h3>
-									<p style="text-align: justify;">Generate secure passwords instantly with this Python desktop app. Ensure robust security with customizable parameters for your password needs.</p>
-									<a href="https://github.com/abhishek2355/Random_Password_Generator" target="_blank">Explore More <i class="fas fa-plus"></i></a>
-								</div>
-								<div class="col-xl-6 col-lg-6">
-									<div class="apihu-port-portfolio-img">
-										<img src="static/image/random_pass.png" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-xl-6 col-lg-6 col-md-6 apihu-port-portfolio-item uiux" style="position: absolute; left: 0%; top: 0px;">
-						<div class="apihu-port-single-portfolio">
-							<div class="row">
-								<div class="col-xl-6 col-lg-6">
-									<span>Machine Learning</span>
-									<h3>Home Price Prediction</h3>
-									<p style="text-align: justify;">Predict home prices accurately with machine learning. Leverage linear regression to forecast property values with precision. Used <b>Linear Regression Algorithum</b> for train the machine learning model.</p>
-									<a href="" target="_blank" class="showAlertBtn">Explore More <i class="fas fa-plus"></i></a>
-								</div>
-								<div class="col-xl-6 col-lg-6">
-									<div class="apihu-port-portfolio-img">
-										<img src="static/image/price_prediction.png" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Project Section End -->
-
-
-		<!-- Acadmic Start -->
-		<section class="apihu-port-pricing-area" id="apihu-port-pricing-area" style="padding-bottom: 20px;">
-			<img class="apihu-port-pricing-shape-left" src="./assets/pricing-left-shape.png" alt="Pricing Area Shape left">
-			<img class="apihu-port-pricing-shape-right" src="./assets/pricing-right-shape.png" alt="Pricing Area Shape right">
-
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-12 text-center">
-						<div class="apihu-port-section-heading">
-							<p class="apihu-port-section-subtitle">Qualifications</p>
-							<h2 class="apihu-port-section-title">Academic and Professional</h2>
-							<p class="apihu-port-section-text">								
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-xl-4 col-lg-4 col-md-6">
-						<div class="apihu-port-single-pricing wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-							<h3>Class X</h3>
-							<h4>Nutan Madhyamik Vidyalaya</h4>
-							<ul>
-								<li><i class="fa-solid fa-location-pin"></i> Loni-masadpur, Karjat</li>
-								<li>% Aggregate: 85.40</li>
-								<li><img src="static/image/nutan_madhyamic.png" alt="ais_img"></li>
-							</ul>
-							<a>
-								Completed <i class="fa-solid fa-check"></i>
-							</a>
-						</div>
-					</div>
-					
-					<div class="col-xl-4 col-lg-4 col-md-6">
-						<div class="apihu-port-single-pricing wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-							<h3>Class XII</h3>
-							<h4>Dada Patil Mahavidyalaya</h4>
-							<ul>
-								<li><i class="fa-solid fa-location-pin"></i> Karjat, Ahmednagar</li>
-								<li>% Aggregate: 70.92</li>
-								<li><img src="static/image/Dada_Patil.png" alt="ais_img"></li>
-							</ul>
-							<a>Completed <i class="fa-solid fa-check"></i></a>
-						</div>
-					</div>
-					
-					<div class="col-xl-4 col-lg-4 col-md-6">
-						<div class="apihu-port-single-pricing wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-							<h3>B.Tech IT</h3>
-							<h4>Dr. BATU</h4>
-							<ul>
-								<li><i class="fa-solid fa-location-pin"></i> Lonere, Raigad</li>
-								<li>3rd Year CGPA: 8.67</li>
-								<li><img src="static/image/DBATU.png" alt="ais_img"></li>
-							</ul>
-							<a>Expected (2024) <i class="fa-solid fa-business-time"></i></a>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-		</section>
-		<!-- Acadmic End -->
-		
-		<!-- Contact Start -->
-		<section class="apihu-port-contact-area" id="contact-details">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-6 col-lg-6 text-left">
-						<div class="apihu-port-section-heading">
-							<p class="apihu-port-section-subtitle">Contact Me</p>
-							<h2 class="apihu-port-section-title">Get in Touch With Me</h2>
-						</div>
-					</div>					
-				</div>
-				<div class="row container">
-					<div class="col-xl-6">
-						<div class="apihu-port-contact-left">
-							<form>
-								<div class="row">
-									<div class="col-xl-6">
-										<input type="text" placeholder="First Name">
-									</div>
-									<div class="col-xl-6">
-										<input type="text" placeholder="Last Name">
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-xl-12">
-										<input type="email" placeholder="Email">
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-xl-12">
-										<input type="text" placeholder="Subject">
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-xl-12">
-										<textarea placeholder="Message"></textarea>
-									</div>
-									<div class="col-xl-12">
-										<button type="submit" class="showAlertBtn">Submit Now</button>
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-					<div class="col-xl-6">
-						<div class="apihu-port-contact-right">
-							<div class="apihu-port-contact-right-img">
-								<img src="static/image/contact_us.jpg" alt="Contact Right">
-							</div>
-							<div class="apihu-port-contact-right-content">
-								<div>
-									<p class="apihu-port-contact-text" style="font-weight: 600; font-family: 'Poppins', sans-serif;">Have a question, a project idea, or just want to say hello? We'd love to hear from you! Fill out the form below, and we'll get back to you as soon as possible.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Contact End -->
-
-		<!-- Footer Start -->
-		<footer class="site-footer">
-			<div class="container">
-				<div class="row">
-				<div class="col-sm-12 col-md-6">
-					<img src="static/image/Abhishek Raut.png" alt="footer logo">
-					<p class="text-justify">Thank you for visiting my personal portfolio site. I would really be glad to connect with you. Message me on my LinkedIn handle or on my Instagram handle.</p><p>Keep learning and keep rising.</p>
-				</div>
-
-				<div class="col-xs-6 col-md-3">
-					<h6>Contact Info</h6>
-					<ul class="footer-links">
-					<li><i class="fa-solid fa-phone" style="color: yellow;"></i>  (+91) 8600916352</li>
-					<li><i class="fa-solid fa-envelope" style="color: yellow;"></i>  abhishekraut2355@gmail.com</li>
-					<li><i class="fa-solid fa-location-pin" style="color: yellow;"></i>  Karjat, Ahmednagar</li>
-					</ul>
-				</div>
-
-				<div class="col-xs-6 col-md-3">
-					<h6>Quick Links</h6>
-					<ul class="footer-links" >
-						<li><a href="#">Home</a></li>
-						<li><a href="#apihu-port-resume">About</a></li>
-						<li><a href="#apihu-port-services">Services</a></li>
-						<li><a href="#apihu-port-feature">Projects</a></li>
-						<li><a href="#apihu-port-pricing-area">Qualifications</a></li>
-						<li><a href="#contact-details">Contact</a></li>
-					</ul>
-				</div>
-				</div>
-				<hr>
-			</div>
-			<div class="container">
-				<div class="row">
-				<div class="col-md-8 col-sm-6 col-xs-12">
-					<p class="copyright-text">Designed with <i class="fa fa-heart pulse" style="color: #e90606;"></i> by
-				<a href="https://www.linkedin.com/in/rautabhishek/" style="color: whitesmoke;"><b>Abhishek Raut</b></a>.
-					</p>
-				</div>
-
-				<div class="col-md-4 col-sm-6 col-xs-12">
-					<ul class="social-icons">
-					<li><a class="github" href="https://github.com/abhishek2355"><i class="fa fa-github"></i></a></li>
-					<li><a class="instagram" href="https://www.instagram.com/abhishekraut2710/?hl=en"><i class="fa fa-instagram"></i></a></li>
-					<li><a class="linkedin" href="https://www.linkedin.com/in/rautabhishek/"><i class="fa fa-linkedin"></i></a></li>   
-					</ul>
-				</div>
-				</div>
-			</div>
-		</footer>
-		<!-- Footer End -->
-
-        <!-- For Js Library -->
-		<script src="./assets/jquery.js.download"></script>
-		<script src="./assets/bootstrap.min.js.download"></script>
-		<script src="./assets/owl.js.download"></script>
-		<script src="./assets/slick.js.download"></script>
-		<script src="./assets/waypoints.min.js.download"></script>
-		<script src="./assets/wow.min.js.download"></script>
-		<script src="./assets/isotope.pkgd.js.download"></script>
-		<script src="./assets/typer-new.js.download"></script>
-		<script src="./assets/appear.js.download"></script>
-		<script src="./assets/progress-bar.js.download"></script>
-		<script src="./assets/scripts-31.js.download"></script>
-
-		<script src="./assets/type.js"></script>
-
-		<script>
-			// Get all buttons
-			const buttons = document.querySelectorAll('.showAlertBtn');
-		
-			// Get the alert bar
-			const alertBar = document.getElementById('alert');
-		
-			// Add event listener to each button
-			buttons.forEach(function(button) {
-			  button.addEventListener('click', function() {
-				event.preventDefault();
-				alertBar.style.display = 'block';
-				setTimeout(function() {
-				  alertBar.style.display = 'none';
-				}, 2000);
-			  });
-			});
-		  </script>
-
-
-		<div id="imageDownloaderSidebarContainer">
-			<div class="image-downloader-ext-container">
-				<div tabindex="-1" class="b-sidebar-outer">
-					<div id="image-downloader-sidebar" tabindex="-1" role="dialog" aria-modal="false" aria-hidden="true" class="b-sidebar shadow b-sidebar-right bg-light text-dark" style="width: 500px; display: none;">
-						<div class="b-sidebar-body">
-							<div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-	</body>
-	<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+    <footer class="site-footer">
+      <div class="shell footer-top">
+        <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">AR</span><span class="brand-name">Abhishek Raut<span class="brand-period">.</span></span></a>
+        <p>Thoughtful iOS, from first sketch to final release.</p>
+        <a class="footer-top-link" href="#home">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+      <div class="shell footer-bottom"><span>© <span id="current-year">2026</span> Abhishek Raut.</span><span>Made with care, and a little Swift thinking.</span></div>
+    </footer>
+  </body>
 </html>

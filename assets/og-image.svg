@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f7f8f5"/>
+  <circle cx="948" cy="330" r="246" fill="#eaf2e4"/>
+  <circle cx="948" cy="330" r="194" fill="none" stroke="#d4e2cb"/>
+  <rect x="862" y="116" width="178" height="380" rx="33" fill="#1c2922"/>
+  <rect x="871" y="126" width="160" height="360" rx="26" fill="#fafbf7"/>
+  <rect x="920" y="134" width="61" height="13" rx="7" fill="#1c2922"/>
+  <text x="897" y="207" fill="#58685c" font-family="Arial,sans-serif" font-size="17">Good morning,</text>
+  <text x="897" y="244" fill="#1f3026" font-family="Arial,sans-serif" font-size="31" font-weight="700">there.</text>
+  <rect x="889" y="268" width="124" height="133" rx="13" fill="#273f32"/>
+  <text x="905" y="297" fill="#b8d5a7" font-family="Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="1.2">TODAY'S FOCUS</text>
+  <text x="905" y="343" fill="#ffffff" font-family="Georgia,serif" font-size="25">Make space</text>
+  <text x="905" y="373" fill="#ffffff" font-family="Georgia,serif" font-size="25">for good ideas.</text>
+  <text x="94" y="154" fill="#607065" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="2">iOS DEVELOPER / FREELANCE PARTNER</text>
+  <text x="88" y="270" fill="#19211e" font-family="Arial,sans-serif" font-size="64" font-weight="700" letter-spacing="-3">Abhishek Raut</text>
+  <text x="88" y="355" fill="#19211e" font-family="Arial,sans-serif" font-size="61" font-weight="700" letter-spacing="-3">Building mobile</text>
+  <text x="88" y="435" fill="#7eaa5e" font-family="Georgia,serif" font-size="62" font-style="italic">products people love.</text>
+  <rect x="91" y="484" width="184" height="4" rx="2" fill="#a5f06b"/>
+</svg>
