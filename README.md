@@ -14,10 +14,14 @@ Then visit `http://localhost:8000`.
 
 ## Portfolio content
 
-The portfolio profile now includes information from the supplied LinkedIn PDF: professional experience, education, skills, languages, and academic highlights. Project links point to public GitHub repositories already linked by the previous portfolio. The contact form opens a prefilled email draft; it does not submit to a server.
+The portfolio profile includes information from the supplied LinkedIn PDF: professional experience, education, skills, languages, and academic highlights. Project links point to public GitHub repositories already linked by the previous portfolio.
 
-Current employer work is described at a high level; no confidential project details are included. Review profile and project details before publishing.
+Current employer work is described at a high level. Project thumbnails are optimized local JPEGs in `static/image/projects/`.
 
-Project thumbnails are optimized local JPEGs in `static/image/projects/`.
+## Contact form
 
-The page title, description, social preview metadata, favicon, and social image are in `index.html` and `assets/`. The layout and responsive styles are in `static/css/portfolio.css`; mobile navigation, reveal-on-scroll motion, and the contact email draft are in `assets/portfolio.js`.
+The contact form uses the Formspree endpoint configured in `index.html` to store submissions and send email notifications. Confirm the notification email in the Formspree dashboard. The free plan currently includes 50 submissions per month and a 30-day submission archive. The email link is also available as a direct contact option.
+
+## Site files
+
+The page title, description, social preview metadata, favicon, and social image are in `index.html` and `assets/`. The layout and responsive styles are in `static/css/portfolio.css`; mobile navigation, reveal-on-scroll motion, and the Formspree contact form are in `assets/portfolio.js`.
