@@ -62,21 +62,76 @@ if ("IntersectionObserver" in window) {
 
 const contactForm = document.querySelector("#contact-form");
 if (contactForm instanceof HTMLFormElement) {
+  const submitButton = contactForm.querySelector('button[type="submit"]');
+  const status = document.querySelector("#contact-status");
+  let statusTimeout;
+
+  function showContactStatus(message, state) {
+    if (!(status instanceof HTMLElement)) return;
+    window.clearTimeout(statusTimeout);
+    status.textContent = message;
+    status.dataset.state = state;
+    status.classList.add("is-visible");
+
+    if (state !== "sending") {
+      statusTimeout = window.setTimeout(() => {
+        status.classList.remove("is-visible");
+      }, state === "error" ? 10000 : 6000);
+    }
+  }
+
   contactForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    const formData = new FormData(contactForm);
-    const recipient = contactForm.getAttribute("action");
-    const name = String(formData.get("name") || "");
-    const email = String(formData.get("email") || "");
-    const message = String(formData.get("message") || "");
-    const subject = encodeURIComponent(`Portfolio inquiry from ${name}`);
-    const body = encodeURIComponent(`${message}\n\nFrom: ${name}\nEmail: ${email}`);
+    if (!contactForm.reportValidity()) return;
 
-    if (!recipient || !recipient.startsWith("mailto:")) {
-      contactForm.reportValidity();
+    const endpoint = contactForm.getAttribute("action");
+    if (!endpoint || !/^https:\/\/formspree\.io\/f\/[A-Za-z0-9]+$/.test(endpoint)) {
+      showContactStatus("The contact form is not configured correctly. Please email me directly.", "error");
       return;
     }
 
-    window.location.href = `${recipient}?subject=${subject}&body=${body}`;
+    const honeypot = contactForm.querySelector('input[name="_gotcha"]');
+    if (honeypot instanceof HTMLInputElement && honeypot.value) {
+      return;
+    }
+
+    const buttonContent = submitButton?.innerHTML;
+    showContactStatus("Sending your message…", "sending");
+    if (submitButton instanceof HTMLButtonElement) {
+      submitButton.disabled = true;
+      submitButton.textContent = "Sending…";
+    }
+
+    fetch(endpoint, {
+      method: "POST",
+      body: new FormData(contactForm),
+      headers: { Accept: "application/json" }
+    })
+      .then(async (response) => {
+        const result = await response.json().catch(() => null);
+        if (!response.ok) {
+          const detail = result && Array.isArray(result.errors)
+            ? result.errors
+              .map((error) => error && typeof error.message === "string" ? error.message : "")
+              .filter(Boolean)
+              .join(" ")
+            : "";
+          throw new Error(detail || "Your message could not be sent. Please try again or email me directly.");
+        }
+
+        contactForm.reset();
+        showContactStatus("Thanks for reaching out. Your message has been sent.", "success");
+      })
+      .catch((error) => {
+        showContactStatus(error instanceof Error
+          ? error.message
+          : "Your message could not be sent. Please try again or email me directly.", "error");
+      })
+      .finally(() => {
+        if (submitButton instanceof HTMLButtonElement) {
+          submitButton.disabled = false;
+          if (buttonContent) submitButton.innerHTML = buttonContent;
+        }
+      });
   });
 }

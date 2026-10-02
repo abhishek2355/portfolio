@@ -290,23 +290,28 @@
               <a href="https://www.instagram.com/abhishekraut2710/" target="_blank" rel="noopener noreferrer">Instagram</a>
             </div>
           </div>
-          <form class="contact-form reveal" id="contact-form" action="mailto:abhishekraut2355@gmail.com" method="post" enctype="text/plain">
+          <form class="contact-form reveal" id="contact-form" action="https://formspree.io/f/moevzgnq" method="post">
+            <div class="form-honeypot" aria-hidden="true">
+              <label for="contact-website">Leave this field empty</label>
+              <input id="contact-website" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+            </div>
+            <input type="hidden" name="_subject" value="New portfolio inquiry">
             <div class="form-row">
               <label for="contact-name">Your name</label>
               <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Jane Smith" required>
             </div>
             <div class="form-row">
               <label for="contact-email">Email address</label>
-              <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="jane@company.com" required>
+              <input id="contact-email" name="_replyto" type="email" autocomplete="email" placeholder="jane@company.com" required>
             </div>
             <div class="form-row">
               <label for="contact-message">A little about your project</label>
               <textarea id="contact-message" name="message" rows="4" placeholder="What are you hoping to build?" required></textarea>
             </div>
             <button class="button button-primary form-submit" type="submit">Start a conversation <span aria-hidden="true">↗</span></button>
-            <p class="form-note">No backend is connected. Submitting opens a draft in your default mail app.</p>
           </form>
         </div>
+        <p class="form-toast" id="contact-status" role="status" aria-live="polite" aria-atomic="true"></p>
       </section>
     </main>
 
