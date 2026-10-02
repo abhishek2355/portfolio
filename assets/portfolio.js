@@ -80,6 +80,10 @@ if (contactForm instanceof HTMLFormElement) {
     }
   }
 
+  contactForm.addEventListener("invalid", () => {
+    showContactStatus("Please complete the required fields and enter a valid email address.", "error");
+  }, true);
+
   contactForm.addEventListener("submit", (event) => {
     event.preventDefault();
     if (!contactForm.reportValidity()) return;
