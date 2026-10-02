@@ -94,11 +94,6 @@ if (contactForm instanceof HTMLFormElement) {
       return;
     }
 
-    const honeypot = contactForm.querySelector('input[name="_gotcha"]');
-    if (honeypot instanceof HTMLInputElement && honeypot.value) {
-      return;
-    }
-
     const buttonContent = submitButton?.innerHTML;
     showContactStatus("Sending your message…", "sending");
     if (submitButton instanceof HTMLButtonElement) {
