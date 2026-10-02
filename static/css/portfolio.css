@@ -1491,16 +1491,6 @@ svg {
   outline-offset: 2px;
 }
 
-.form-honeypot {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  clip-path: inset(50%);
-}
-
 .form-submit {
   width: 100%;
   margin-top: 22px;
